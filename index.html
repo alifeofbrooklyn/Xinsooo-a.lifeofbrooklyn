@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinsoo (Shin Su-hyun)</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Noto Sans Thai) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;700&family=Noto+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Bodoni Moda', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .image-hover:hover {
+            transform: scale(1.03);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white border-b border-stone-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="serif-font text-2xl font-bold tracking-widest text-stone-900">XINSOO</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-stone-600 hover:text-stone-900 transition-colors text-sm tracking-wide uppercase">ประวัติ (Profile)</a>
+                    <a href="#works" class="text-stone-600 hover:text-stone-900 transition-colors text-sm tracking-wide uppercase">ผลงาน (Works)</a>
+                    <a href="#gallery" class="text-stone-600 hover:text-stone-900 transition-colors text-sm tracking-wide uppercase">แกลเลอรี (Gallery)</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-stone-600 hover:text-stone-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#about" class="block px-3 py-2 text-stone-600 hover:text-stone-900">ประวัติ</a>
+                <a href="#works" class="block px-3 py-2 text-stone-600 hover:text-stone-900">ผลงาน</a>
+                <a href="#gallery" class="block px-3 py-2 text-stone-600 hover:text-stone-900">แกลเลอรี</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-stone-900">
+            <img src="https://img2.pic.in.th/pic/XINSOOO-ONE.png" alt="Shin Su Hyun Background" class="w-full h-full object-cover opacity-70">
+        </div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="relative z-10 text-center text-white px-4 fade-in-up">
+            <p class="text-sm md:text-lg tracking-[0.3em] mb-4 uppercase text-stone-300">South Korean Actress</p>
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 serif-font">SHIN SU HYUN</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 font-sans">ชินซูฮยอน | 신수현</p>
+            <a href="#works" class="inline-block px-8 py-3 border border-white text-white hover:bg-white hover:text-stone-900 transition-all duration-300 tracking-wider text-sm">
+                VIEW FILMOGRAPHY
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Profile Image -->
+                <div class="w-full md:w-1/2">
+                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
+                        <div class="aspect-[3/4] bg-stone-200 flex items-center justify-center text-stone-400">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Shin_Su-hyun_on_Produce_48.jpg" alt="Shin Su Hyun Profile" class="object-cover w-full h-full">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bio Content -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 serif-font text-stone-900">Who is Xinsoo?</h2>
+                    <div class="h-1 w-20 bg-stone-900 mb-8"></div>
+                    <p class="text-lg leading-relaxed text-stone-600 mb-6">
+                        <strong class="text-stone-800">ชินซูฮยอน (Shin Su-hyun)</strong> เป็นนักแสดงหญิงชาวเกาหลีใต้ที่มีเสน่ห์และความสามารถโดดเด่น เกิดเมื่อวันที่ <span class="text-stone-800 font-medium">27 กุมภาพันธ์ 1996</span> เธอเริ่มต้นเส้นทางในวงการบันเทิงจากการเข้าร่วมรายการแข่งขัน <em>Produce 48</em> และได้พัฒนาตัวเองสู่นักแสดงเต็มตัว
+                    </p>
+                    <p class="text-lg leading-relaxed text-stone-600 mb-8">
+                        ด้วยใบหน้าที่เก๋และทักษะการแสดงที่เป็นธรรมชาติ เธอได้รับความสนใจอย่างมากจากบทบาทในซีรีส์เรื่อง <strong>"Duty After School"</strong> และกำลังจะมีผลงานน่าจับตามองอีกมากมาย
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 text-sm">
+                        <div>
+                            <p class="text-stone-400 uppercase tracking-wider mb-1">Born</p>
+                            <p class="font-medium text-lg">Feb 27, 1996</p>
+                        </div>
+                        <div>
+                            <p class="text-stone-400 uppercase tracking-wider mb-1">Height</p>
+                            <p class="font-medium text-lg">163 cm</p>
+                        </div>
+                        <div>
+                            <p class="text-stone-400 uppercase tracking-wider mb-1">Agency</p>
+                            <p class="font-medium text-lg">Management Run</p>
+                        </div>
+                        <div>
+                            <p class="text-stone-400 uppercase tracking-wider mb-1">Instagram</p>
+                            <a href="https://www.instagram.com/xinsooo/" target="_blank" class="font-medium text-lg text-stone-900 border-b border-stone-300 hover:border-stone-900 transition-colors">@xinsooo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works / Filmography -->
+    <section id="works" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-stone-500 uppercase tracking-widest text-sm">Selected Works</span>
+                <h2 class="text-4xl font-bold mt-2 serif-font">Drama Series</h2>
+            </div>
+
+            <!-- Grid for 2 main works -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- 1. Study Group (2024) -->
+                <div class="bg-white group hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden cursor-pointer">
+                    <div class="h-64 bg-stone-300 overflow-hidden relative">
+                        <img src="https://i0.wp.com/www.korseries.com/wp-content/uploads/2025/01/Shin-Su-Hyun-2.jpg?w=647&ssl=1" alt="Study Group" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <span class="text-xs bg-stone-800 px-2 py-1 rounded mb-2 inline-block">TVING</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900 leading-tight">Study Group</h3>
+                            <span class="text-sm font-bold text-stone-500">2024</span>
+                        </div>
+                        <p class="text-stone-500 text-sm mb-4">เรื่องราวของนักเรียนสายบู๊ที่อยากเรียนเก่ง</p>
+                         <p class="text-stone-600 text-sm">รับบท: Lee Ji-Woo</p>
+                    </div>
+                </div>
+
+                <!-- 2. Duty After School (Part 1 & 2) -->
+                <div class="bg-white group hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden cursor-pointer">
+                    <div class="h-64 bg-stone-300 overflow-hidden relative">
+                        <img src="https://i.pinimg.com/736x/6c/15/2a/6c152a87fc3329d481534be91d89e52e.jpg" alt="Duty After School" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white text-xs">Cha So-yeon</span>
+                        </div>
+                        <div class="absolute top-2 right-2">
+                             <span class="text-[10px] bg-red-600 text-white px-2 py-1 rounded-full shadow-sm">Hot</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900 leading-tight">Duty After School</h3>
+                            <span class="text-sm font-bold text-stone-500">2023</span>
+                        </div>
+                        <p class="text-stone-500 text-sm mb-4">สมรภูมิเดือดหลังเลิกเรียน (Part 1 & 2)</p>
+                         <p class="text-stone-600 text-sm">รับบท: Cha So-yeon</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-stone-400 italic">More works coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section id="gallery" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-4xl font-bold serif-font">Visual Gallery</h2>
+                    <p class="text-stone-500 mt-2">Charismatic & Versatile Looks</p>
+                </div>
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="hidden md:inline-flex items-center text-stone-900 font-semibold hover:underline">
+                    View on Instagram <i class="fab fa-instagram ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Masonry Layout with Instagram Overlay -->
+            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                
+                <!-- Image Item (Template) -->
+                <!-- เพิ่ม Link และ Overlay IG Icon -->
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/1a/04/0d/1a040d48bfb2779e5d540a540cc2b5b0.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/81/46/ff/8146ff27d758810c6cd2b57c0d730ac8.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://pbs.twimg.com/media/FuywDqnaEAEWRRK.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://yt3.googleusercontent.com/PEdCkzsOjHvlz-Jy4SBlSRN3YNrgyFXx440euFs1dvbkRHT1A4-CMLAvh9e8qe79vUlB3pIf7nk=s900-c-k-c0x00ffffff-no-rj" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/96/94/59/9694599e65dc14df0541a344e20bda7b.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://media.kpop.social/kpop-media/media_attachments/files/110/542/282/676/410/787/original/53e6c9835e555296.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/fb/16/41/fb1641bd0d60f614eff50c5219eb44a9.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/36/ea/1b/36ea1b7131ce8fecf21b3a95d52fcea2.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://pbs.twimg.com/media/D2QugiJWkAIpcLp.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://thumb.viva.id/vivabanyuwangi/665x374/2025/02/24/67bc2055284c2-shin-soo-hyun-sebagai-lee-ji-woo-di-study-group_banyuwangi.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.redd.it/shin-su-hyun-xinsoo-vs-hong-soo-yeon-xooos-who-you-got-this-v0-re6kqcj8cucc1.jpg?width=818&format=pjpg&auto=webp&s=edf5e2fc618edb97558c55d98c118425e5e05c93" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://pbs.twimg.com/media/D2QugjxWsAAgi5b.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMYkymqXynsD6ZStQSU1s7V1Y9rm_xVgdGg&s" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD5zpL8jmyDmUDlPQnX5ETilo7FunwEWvplA&s" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/85/50/22/8550224331f9963a49e1fbc3b31a0e52.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqA-U_5obCeQRNLJHZ0KzI5rc71_5Angl8xQ&s" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2DSE5sxvEnGbDh5YSfiJpXCLcaCYuxjv5bw&s" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://image.idntimes.com/post/20250326/1898255584-8ec6ec3ddb90d2bd58c672717f0972f2-2ee58ef52d8e7632103140f1bc75fbf4.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcriLeCyNA-kdiVTI6XzukrtGIPU47638mkA&s" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://preview.redd.it/shin-su-hyun-xinsoo-vs-hong-soo-yeon-xooos-who-you-got-this-v0-cz82kn09cucc1.jpg?width=640&crop=smart&auto=webp&s=c0fae60d1e8e9bca7eed2f12a778511d18ebfbf1" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="break-inside-avoid rounded-lg overflow-hidden group relative block">
+                    <img src="https://i.pinimg.com/736x/46/41/4d/46414dc28a69bc6bfa2f7ab9f5c2d1a2.jpg" alt="Gallery Image" class="w-full h-auto object-cover image-hover transition-transform duration-500">
+                     <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl drop-shadow-lg"></i>
+                    </div>
+                </a>
+
+            </div>
+            
+             <div class="mt-8 text-center md:hidden">
+                <a href="https://www.instagram.com/xinsooo/" target="_blank" class="inline-flex items-center px-6 py-3 border border-stone-300 rounded-lg text-stone-700 font-semibold hover:bg-stone-50">
+                    <i class="fab fa-instagram mr-2"></i> Follow @xinsooo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Social Proof (Startup Style) -->
+    <section class="py-16 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-stone-700">
+                <div class="p-4">
+                    <i class="fas fa-users text-3xl mb-4 text-stone-400"></i>
+                    <h3 class="text-4xl font-bold serif-font">1.7M+</h3>
+                    <p class="text-stone-400 mt-2">Instagram Followers</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-play-circle text-3xl mb-4 text-stone-400"></i>
+                    <h3 class="text-4xl font-bold serif-font">10+</h3>
+                    <p class="text-stone-400 mt-2">Dramas & Appearances</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-hashtag text-3xl mb-4 text-stone-400"></i>
+                    <h3 class="text-4xl font-bold serif-font">Rising Star</h3>
+                    <p class="text-stone-400 mt-2">In Korean Entertainment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="bg-white border-t border-stone-200 pt-16 pb-8">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <p class="text-stone-400 text-sm">
+                &copy; 2025 a.lifeofbrooklyn Shin Su Hyun.<br>
+                <span class="text-xs">Turning coffee into beautiful user interfaces.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script for smooth scroll & animations (Optional for simpler setup) -->
+    <script>
+        // Simple reveal on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            // ปรับ script ให้เข้ากับดีไซน์ใหม่ (ไม่ต้องเพิ่ม shadow แล้ว เพราะมี border ชัดเจน)
+            if (window.scrollY > 50) {
+                // navbar.classList.add('shadow-md'); // Comment ออกเพื่อให้คงความ "ตรง" ไว้
+            } else {
+                // navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
